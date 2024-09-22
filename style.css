@@ -1,0 +1,194 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #7323b0;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* About Section */
+#about {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+#about img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #7323b0;
+    color: white;
+    padding: 2rem;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+#skills li {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+/* Projects Section */
+#projects {
+    padding: 2rem;
+}
+
+#projects .project {
+    margin-bottom: 2rem;
+}
+
+#projects img {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+#projects h3 {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+}
+
+/* Resume Section */
+#resume {
+    background-color: #7323b0;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+#resume a {
+    background-color: #2f54eb;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e0e0e0;
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact a {
+    color: #2f54eb;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1d202c;
+    color: white;
+    padding: 1rem 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #about p, #projects h3 {
+        padding: 0;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #skills li {
+        font-size: 1rem;
+    }
+
+    #about p {
+        max-width: 90%;
+    }
+
+    #projects h3 {
+        font-size: 1.2rem;
+    }
+
+    #resume a {
+        font-size: 1rem;
+        padding: 0.6rem 1rem;
+    }
+
+    #contact p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
